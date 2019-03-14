@@ -1,0 +1,156 @@
+﻿using System;
+
+public class Parent
+{
+    private int parentID;
+    private string parentFirstName;
+    private string parentMiddleName;
+    private string parentLastName;
+    private string parentStreet;
+    private string parentCity;
+    private string parentState;
+    private string parentZipCode;
+    private string parentCountry;
+    private string parentEmail;
+    private string parentDateOfBirth;
+    private string parentUserName;
+    private string parentPassword;
+
+	public Parent(int parentID, string parentFirstName, string parentMiddleName, string parentLastName, string parentStreet, string parentCity, string parentState, string parentZipCode, string parentCountry, string parentEmail, string parentDateOfBirth, string parentUserName, string parentPassword)
+	{
+        setParentId(parentID);
+        setParentFirstName(parentFirstName);
+        setParentMiddleName(parentMiddleName);
+        setParentLastName(parentLastName);
+        setParentStreet(parentStreet);
+        setParentCity(parentCity);
+        setParentState(parentState);
+        setParentZipCode(parentZipCode);
+        setParentCountry(parentCountry);
+        setParentEmail(parentEmail);
+        setParentDateOfBirth(parentDateOfBirth);
+        setParentUserName(parentUserName);
+        setParentPassword(parentPassword);
+	}
+
+    //Setters
+    protected void setParentID(int parentID)
+    {
+        this.parentID = parentID;
+    }
+
+    protected void setParentFirstName(string parentFirstName)
+    {
+        this.parentFirstName = parentFirstName;
+    }
+
+    protected void setParentMiddleName(string parentMiddleName)
+    {
+        this.parentMiddleName = parentMiddleName;
+    }
+
+    protected void setParentLastName(string parentLastName)
+    {
+        this.parentID = parentID;
+    }
+
+    protected void setParentStreet(string parentStreet)
+    {
+        this.parentStreet = parentStreet;
+    }
+
+    protected void setParentCity(string parentCity)
+    {
+        this.parentCity = parentCity;
+    }
+
+    protected void setParentState(string parentState)
+    {
+        this.parentState = parentState;
+    }
+
+    protected void setParentZipCode(string parentZipCode)
+    {
+        this.parentZipCode = parentZipCode;
+    }
+
+    protected void setParentCountry(string parentCountry)
+    {
+        this.parentCountry = parentCountry;
+    }
+
+    protected void setParentEmail (string parentEmail)
+    {
+        this.parentEmail = parentEmail;
+    }
+
+    protected void setParentDateOfBirth(string parentDateOfBirth)
+    {
+        this.parentDateOfBirth = parentDateOfBirth;
+    }
+
+    protected void setParentUserName(string parentUserName)
+    {
+        this.parentUserName = parentUserName;
+    }
+
+    protected void setParentPassword(string parentPassword)
+    {
+        this.parentPassword = parentPassword;
+    }
+
+    //Getters
+
+    protected int getParentID()
+    {
+        return this.parentID;
+    }
+    protected string getParentFirstName()
+    {
+        return this.parentFirstName;
+    }
+    protected string getParentMiddleName()
+    {
+        return this.parentMiddleName;
+    }
+    protected string getParentLastName()
+    {
+        return this.parentLastName;
+    }
+    protected string getParentStreet()
+    {
+        return this.parentStreet;
+    }
+    protected string getParentCity()
+    {
+        return this.parentCity;
+    }
+    protected string getParentState()
+    {
+        return this.parentState;
+    }
+    protected string getParentZipCode()
+    {
+        return this.parentZipCode;
+    }
+    protected string getParentCountry()
+    {
+        return this.parentCountry;
+    }
+    protected string getParentEmail()
+    {
+        return this.parentEmail;
+    }
+    protected string getParentDateOfBirth()
+    {
+        return this.parentDateOfBirth;
+    }
+    protected string getParentUserName()
+    {
+        return this.parentUserName;
+    }
+    protected string getParentPassword()
+    {
+        return this.parentPassword;
+    }
+}
