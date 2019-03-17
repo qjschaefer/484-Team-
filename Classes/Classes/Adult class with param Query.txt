@@ -1,0 +1,183 @@
+﻿using System;
+using System.Security.Cryptography;
+public class Adult
+{
+    private int adultID;
+    private string firstName;
+    private string middleName;
+    private string lastName;
+    private string street;
+    private string city;
+    private string state;
+    private string zip;
+    private string country;
+    private string adultType;
+    private string email;
+    private string dateOfBirth;
+    private string userName;
+    private string password;
+    private int lessonID;
+
+    public Adult(int adultID, string firstName, string middleName, string lastName, string street, string city, string state, string zip, string country, string adultType, string email, string dateOfBirth, string userName, string password, int lessonID)
+    {
+        setAdultID(adultID);
+        setFirstName(firstName);
+        setMiddleName(middleName);
+        setLastName(lastName);
+        setStreet(street);
+        setCity(city);
+        setState(state);
+        setZip(zip);
+        setCountry(country);
+        setAdultType(adultType); 
+        setEmail(email);
+        setDateOfBirth(dateOfBirth);
+        setUserName(userName);
+        setPassword(password);
+        setLessonID(lessonID);
+    }
+
+    protected void setAdultID(int adultID)
+    {
+        this.adultID = adultID;
+    }
+
+    protected void setFirstName(string firstName)
+    {
+        this.firstName = firstName;
+    }
+    protected void setMiddleName(string middleName)
+    {
+        this.middleName = middleName;
+    }
+    protected void setLastName(string lastName)
+    {
+        this.lastName = lastName;
+    }
+    protected void setStreet(string street)
+    {
+        this.street = street;
+    }
+    protected void setCity(string city)
+    {
+        this.city = city;
+    }
+    protected void setState(string state)
+    {
+        this.state = state;
+    }
+    protected void setZip(string zip)
+    {
+        this.zip = zip;
+    }
+    protected void setCountry(string country)
+    {
+        this.country = country;
+    }
+    protected void setAdultType(string adultType)
+    {
+        this.adultType = adultType;
+    }
+    protected void setEmail(string email)
+    {
+        this.email = email;
+    }
+    protected void setDateOfBirth(string dateOfBirth)
+    {
+        this.dateOfBirth = dateOfBirth;
+    }
+    protected void setUserName(string userName)
+    {
+        this.userName = userName;
+    }
+    protected void setPassword(string password)
+    {
+        this.password = password;
+    }
+    protected void setlessonID(int lessonID)
+    {
+        this.lessonID = lessonID;
+    }
+
+    //getters 
+    protected int getAdultID()
+    {
+        return this.adultID;
+    }
+    protected string getFirstName()
+    {
+        return this.firstName;
+    }
+    protected string getMiddleName()
+    {
+        return this.middleName;
+    }
+    protected string getLastName()
+    {
+        return this.lastName;
+    }
+    protected string getStreet()
+    {
+        return this.street;
+    }
+    protected string getCity()
+    {
+        return this.city;
+    }
+    protected string getState()
+    {
+        return this.state;
+    }
+    protected string getCountry()
+    {
+        return this.country;
+    }
+    protected string getAdultType()
+    {
+        return this.adultType;
+    }
+    protected string getEmail()
+    {
+        return this.email;
+    }
+    protected string getDateOfBirth()
+    {
+        return this.dateOfBirth;
+    }
+    protected string getUserName()
+    {
+        return this.userName;
+    }
+    protected string getPassword()
+    {
+        return this.password;
+    }
+    protected int getLessonID()
+    {
+        return this.lessonID;
+    }
+
+    //Paremeterized Query
+    Adult newAdult = new Adult(txtAdultID.Text, txtFirstName.Text, txtMiddleName.Text, txtLastName.Text, txtStreet.Text, txtCity.Text, txtState.Text, txtZip.Text, txtCountry.Text, txtAdultType.Text, txtEmail.Text, txtDateOfBirth.Text, txtUserName.Text, txtPassword.Text, txtLessonID.Text);
+    SqlCommand insert = new SqlCommand();
+    
+    insert.CommandText = "Insert INTO [*Database*].[Adult] VALUES(@adultID, @firstName, @middleName, @lastName, @street, @city, @state,@zip, @country, @adultType, @email, @dateOfBirth,@userName, @password, @lessonID)";
+        
+    insert.Parameters.AddWithValue("@adultID",Adult.getAdultID());
+    insert.Parameters.AddWithValue("@firstName",Adult.getFirstName());
+    insert.Parameters.AddWithValue("@middleName",Adult.getMiddleName());
+    insert.Parameters.AddWithValue("@lastName",Adult.getLastName());
+    insert.Parameters.AddWithValue("@street",Adult.getStreet());
+    insert.Parameters.AddWithValue("@city",Adult.getCity());
+    insert.Parameters.AddWithValue("@state",Adult.getState());
+    insert.Parameters.AddWithValue("@zip",Adult.getZip());
+    insert.Parameters.AddWithValue("@country",Adult.getCountry());
+    insert.Parameters.AddWithValue("@adultType",Adult.getAdultType());
+    insert.Parameters.AddWithValue("@email",Adult.getEmail());
+    insert.Parameters.AddWithValue("@dateOfBirth",Adult.getDateOfBirth());
+    insert.Parameters.AddWithValue("@userName",Adult.getUserName());
+    insert.Parameters.AddWithValue("@password",Adult.getPassword());
+    insert.Parameters.AddWithValue("@lessonID",Adult.getLessonID());
+
+    insert.ExecuteNonQuery();
+}

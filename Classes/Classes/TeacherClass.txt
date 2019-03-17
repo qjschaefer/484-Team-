@@ -1,0 +1,148 @@
+using System;
+using System.Security.Cryptography;
+public class Teacher
+{
+    private int teacherID;
+    private string teacherFirstName;
+    private string teacherMiddleName;
+    private string teacherLastName;
+    private string street;
+    private string city;
+    private string state;
+    private string zip;
+    private string country;
+    private string teacheremail;
+    private string teacherDateOfBirth;
+    private int schoolID;
+    private string teacherUserName;
+    private string teacherPassword;
+
+    public Teacher(int teacherID, string teacherFirstName, string teacherMiddleName, string teacherLastName, string street, string city, string state, string zip, string country)
+	{
+        setTeacherFirstName(teacherFirstName);
+        setTeacherMiddleName(teacherMiddleName);
+        setTeacherLastName(teacherLastName);
+        setStreet(street);
+        setCity(city);
+        setState(state);
+        setZip(zip);
+        setCountry(country);
+        setTeacherEmail(teacherEmail);
+        setTeacherDateOfBirth(teacherDateOfBirth);
+        setSchoolID(schoolID);
+        setTeacherUserName(teacherUserName);
+        setTeacherPassword(teacherPassword);
+	}
+
+    protected void setTeacherID(int teacherID)
+    {
+        this.teacherID = teacherID;
+    }
+
+    protected void setTeacherFirstName(string teacherFirstName)
+    {
+        this.teacherFirstName = teacherFirstName;
+    }
+    protected void setTeacherLastName(string teacherLastName)
+    {
+        this.teacherLastName = teacherLastName;
+    }
+    protected void setTeacherMiddleName(string teacherMiddleName)
+    {
+        this.teacherMiddleName = teacherMiddleName;
+    }
+    protected void setStreet(string street)
+    {
+        this.street = street;
+    }
+    protected void setCity(string city)
+    {
+        this.city = city;
+    }
+    protected void setState(string state)
+    {
+        this.state = state;
+    }
+    protected void setZip(string zip)
+    {
+        this.zip = zip;
+    }
+    protected void setCountry(string country)
+    {
+        this.country = country;
+    }
+    protected void setTeacherEmail(string teacherEmail)
+    {
+        this.teacheremail = teacherEmail;
+    }
+    protected void setTeacherDateOfBirth(string teacherDateOfBirth)
+    {
+        this.teacherDateOfBirth = teacherDateOfBirth;
+    }
+    protected void setSchoolID(string schoolID)
+    {
+        this.schoolID = schoolID;
+    }
+    protected void setTeacherUserName (string teacherUserName)
+    {
+        this.teacherUserName = teacherUserName;
+    }
+    protected void setTeacherPassword(string teacherPassword)
+    {
+        this.teacherPassword = teacherPassword;
+    }
+    
+    //getters 
+    protected int getTeacherID()
+    {
+        return this.teacherID;
+    }
+    protected string getTeacherFirstName()
+    {
+        return this.teacherFirstName;
+    }
+    protected string getTeacherMiddleName()
+    {
+        return this.teacherMiddleName;
+    }
+    protected string getTeacherLastName()
+    {
+        return this.teacherLastName;
+    }
+    protected string getStreet()
+    { 
+        return this.street;
+    }
+    protected string getCity()
+    {
+        return this.city;
+    }
+    protected string getState()
+    {
+        return this.state;
+    }
+    protected string getCountry()
+    {
+        return this.country;
+    }
+    protected string getTeacherEmail()
+    {
+        return this.teacherEmail;
+    }
+    protected string getTeacherDateOfBirth()
+    {
+        return this.teacherDateOfBirth;
+    }
+    protected int schoolID()
+    {
+        return this.schoolID;
+    }
+    protected string getTeacherUserName()
+    {
+        return this.teacherUserName;
+    }
+    protected string getTeacherPassword()
+    {
+        return this.teacherPassword;
+    }
+}
